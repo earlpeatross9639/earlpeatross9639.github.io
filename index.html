@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- Content Security Policy for a static, self-contained site.
+       Everything loads from this origin only; no third-party scripts or trackers.
+       (frame-ancestors / X-Frame-Options are best set as real HTTP headers — see README.) -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Primary SEO -->
+  <title>Earl Peatross III | Information Security Specialist</title>
+  <meta name="description" content="Earl Peatross III, cybersecurity professional in cloud security, Zero Trust access, security operations, and GRC. Connect, view my resume, and reach out." />
+  <meta name="author" content="Earl Peatross III" />
+  <meta name="theme-color" content="#0a0e14" />
+  <link rel="canonical" href="https://earlpeatross9639.github.io/" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Earl Peatross III | Cloud Security, Security Engineering & GRC" />
+  <meta property="og:description" content="Cybersecurity professional in cloud security, Zero Trust access, security operations, and GRC." />
+  <meta property="og:url" content="https://earlpeatross9639.github.io/" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Earl Peatross III | Cloud Security, Security Engineering & GRC" />
+  <meta name="twitter:description" content="Cybersecurity professional in cloud security, Zero Trust access, security operations, and GRC." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <!-- Favicon (replace assets/favicon.svg with your own icon if desired) -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== Sticky Header / Nav ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 4.7-3.2 8.8-8 10-4.8-1.2-8-5.3-8-10V5l8-3zm-1.2 12.6l5-5-1.4-1.4-3.6 3.6-1.6-1.6L7.8 11.6l3 3z"/></svg>
+        </span>
+        <span class="brand-name" id="brand-name">Earl Peatross III</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#connect">Connect</a>
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== Hero ===================== -->
+    <section class="hero" id="top">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text" data-reveal>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Available for opportunities &amp; collaboration</p>
+          <h1 id="hero-name">Earl Peatross III</h1>
+          <p class="hero-nickname" id="hero-nickname" hidden></p>
+          <p class="hero-tagline" id="hero-tagline">Information Security • Incident Response • Cybersecurity</p>
+          <p class="hero-intro" id="hero-intro"></p>
+          <div class="hero-buttons" id="hero-buttons"></div>
+        </div>
+
+        <div class="hero-photo" data-reveal>
+          <!-- Replace assets/profile.jpg with your own photo (square works best). -->
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Earl Peatross III" width="320" height="320" loading="eager" decoding="async" />
+            <span class="photo-ring" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Let's Connect ===================== -->
+    <section class="section" id="connect" aria-labelledby="connect-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-kicker">// networking</span>
+          <h2 id="connect-title">Let's Connect</h2>
+          <p class="section-sub">Every link below is one tap away. Save my contact card before you leave.</p>
+        </div>
+        <div class="link-grid" id="connect-grid" data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ===================== Resume ===================== -->
+    <section class="section section-alt" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="resume-panel" data-reveal>
+          <div class="resume-copy">
+            <span class="section-kicker">// credentials</span>
+            <h2 id="resume-title">Resume</h2>
+            <p class="section-sub">Full professional background, experience, and certifications. Opens cleanly on mobile.</p>
+          </div>
+          <div class="resume-actions" id="resume-actions"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-head" data-reveal>
+          <span class="section-kicker">// about</span>
+          <h2 id="about-title">About</h2>
+          <div id="about-text" class="about-text"></div>
+          <p class="about-creds" id="about-creds" hidden></p>
+          <p class="about-meta">
+            <span class="meta-pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            </span>
+            <span id="about-location">Clarksville, IN</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Areas of Focus ===================== -->
+    <section class="section section-alt" id="focus" aria-labelledby="focus-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-kicker">// capabilities</span>
+          <h2 id="focus-title">Areas of Focus</h2>
+          <p class="section-sub">Where I spend my time defending, building, and responding.</p>
+        </div>
+        <div class="focus-grid" id="focus-grid" data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ===================== Projects ===================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-kicker">// work</span>
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-sub">A selection of my work and community involvement.</p>
+        </div>
+        <div class="projects-grid" id="projects-grid" data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel" data-reveal>
+          <span class="section-kicker">// get in touch</span>
+          <h2 id="contact-title">Have an opportunity or want to connect?</h2>
+          <p class="section-sub">I'd be glad to talk security, roles, or collaboration.</p>
+          <div class="contact-buttons" id="contact-buttons"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QR ===================== -->
+    <section class="section qr-section" id="qr" aria-labelledby="qr-title">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container qr-inner" data-reveal>
+        <div class="qr-copy">
+          <span class="section-kicker">// share</span>
+          <h2 id="qr-title">Scan. Connect. Let's Talk Security.</h2>
+          <p class="section-sub">Point a phone camera at the code to open this page instantly.</p>
+          <p class="qr-url-line">Links to: <span class="qr-url" id="qr-url">https://YOUR-DOMAIN-HERE.com</span></p>
+          <p class="qr-note" id="qr-note" hidden>⚠ Replace <code>qrUrl</code> in <code>script.js</code> with your real domain, then regenerate.</p>
+          <p class="qr-hint">Need a high-res printable version? Open <a href="qr.html">the QR generator page</a>.</p>
+        </div>
+        <div class="qr-card">
+          <div class="qr-code" id="qr-code" role="img" aria-label="QR code to this website"></div>
+          <button class="btn btn-ghost qr-save" id="save-contact-link" type="button">
+            <span class="btn-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm6 4.5A2.75 2.75 0 1 0 12 12a2.75 2.75 0 0 0 0-5.5zM7.5 17.5c0-2 2-3 4.5-3s4.5 1 4.5 3v.5h-9v-.5z"/></svg></span>
+            Save my contact card
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand"><span id="footer-name">Earl Peatross III</span></p>
+      <p class="footer-meta">© <span id="year">2026</span> · Built as a static, tracker-free site.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

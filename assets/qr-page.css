@@ -1,0 +1,38 @@
+/* Styles specific to the standalone QR generator page (qr.html) */
+.qr-tool { padding-block: 40px 60px; max-width: 900px; }
+.back-link { display: inline-block; font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 18px; }
+.qr-tool h1 { font-size: clamp(1.7rem, 6vw, 2.4rem); }
+
+.qr-tool-grid { display: grid; grid-template-columns: 1fr; gap: 22px; margin-top: 28px; }
+@media (min-width: 720px) { .qr-tool-grid { grid-template-columns: 1fr 1fr; align-items: start; } }
+
+.qr-form {
+  display: flex; flex-direction: column; gap: 8px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px;
+}
+.qr-form label { font-weight: 700; font-size: 0.9rem; margin-top: 8px; }
+.qr-form input, .qr-form select {
+  width: 100%; min-height: 48px; padding: 0 14px;
+  background: var(--bg-2); color: var(--text);
+  border: 1px solid var(--border-2); border-radius: 10px;
+  font: inherit;
+}
+.qr-form input:focus, .qr-form select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.qr-form .btn { margin-top: 16px; }
+
+.qr-preview {
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+  background: var(--surface); border: 1px solid var(--border-2);
+  border-radius: var(--radius); padding: 22px;
+}
+.qr-preview .qr-code { width: min(300px, 78vw); }
+.qr-tool-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; width: 100%; }
+.qr-tool-actions .btn { flex: 1 1 auto; min-width: 120px; }
+.qr-tip { color: var(--muted); font-size: 0.85rem; text-align: center; margin: 0; }
+
+@media print {
+  body * { visibility: hidden; }
+  .qr-code, .qr-code * { visibility: visible; }
+  .qr-code { position: fixed; inset: 0; margin: auto; width: 320px; height: 320px; box-shadow: none; }
+}
