@@ -84,8 +84,8 @@ const CONFIG = {
       link: ""
     },
     {
-      name: "KCI3 · Founding Member",
-      description: "Founding member of the Kentucky Cyber Intelligence Information Initiative, a regional threat-intelligence sharing community. Active in ISACA and ISSA Kentuckiana.",
+      name: "KCI3 · Founding Member & Vice President",
+      description: "Founding member and Vice President of the Kentucky Cyber Intelligence Information Initiative, a regional threat-intelligence sharing community. Active in ISACA and ISSA Kentuckiana.",
       tech: ["Threat Intel", "Community"],
       link: ""
     },
